@@ -16,7 +16,7 @@ Button press would then execute the methods in my other two classes, starting th
 
 2.)  Basic Class (YeOldeCrawler)
 
-This would include my limits on how many results to get, as well as some lists where i could keep URLS that have been either found of visited, and it would also keep track of whether or not my dirtyWork class was successfully loading and parsing URLS - in the event of an error, the process would stop.
+This would include my limits on how many results to get, as well as some lists where i could keep URLS that have been either found or visited, and it would also keep track of whether or not my dirtyWork class was successfully loading and parsing URLS - in the event of an error, the process would stop.
 
 3.) Dirty Work Class
 
