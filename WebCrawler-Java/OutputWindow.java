@@ -39,7 +39,7 @@ public class OutputWindow extends JFrame {
 			addressInput = (String)(textfield.getText());
 			YeOldeCrawler goTime = new YeOldeCrawler();
 			goTime.search(addressInput);
-			resultstable.setText("Found " + goTime.pagesVisited.size() + " pages!");
+			resultstable.setText("Found " + goTime.pageResultsNumber + " pages!");
 			
 		}
 	}

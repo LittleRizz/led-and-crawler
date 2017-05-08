@@ -4,8 +4,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-public class YeOldeCrawler
-{
+public class YeOldeCrawler {
+	
+  int pageResultsNumber = 0;
+  
 	//capping searches at 10, so it doesn't go forever
   private static final int MaxSearch = 10;
   private Set<String> pagesVisited = new HashSet<String>();
@@ -31,6 +33,7 @@ public class YeOldeCrawler
           this.pagesToVisit.addAll(scanner.getLinks());
       }
       System.out.println("\n**Done** Visited " + this.pagesVisited.size() + " web page(s)");
+      pageResultsNumber = this.pagesVisited.size();
   }
 
   private String nextUrl()
