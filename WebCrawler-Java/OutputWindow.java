@@ -16,7 +16,7 @@ public class OutputWindow extends JFrame {
 	public OutputWindow(){
 		setLayout(new FlowLayout());
 		
-		label = new JLabel("Crawler Label");
+		label = new JLabel("Input URL Here");
 		add(label);
 		
 		textfield = new JTextField(15);
@@ -49,7 +49,7 @@ public class OutputWindow extends JFrame {
 	public static void main (String args[]) {
 		OutputWindow gui = new OutputWindow();
 		gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		gui.setSize(600, 600);
+		gui.setSize(300, 300);
 		gui.setVisible(true);
 		gui.setTitle("Web Crawler Time!");
 	
